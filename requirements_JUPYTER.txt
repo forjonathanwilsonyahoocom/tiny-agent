@@ -1,0 +1,7 @@
+numpy
+plotly
+matplotlib
+jupyter==1.1.1
+langchain
+langchain-ollama
+langchain-core
