@@ -19,7 +19,8 @@ ENV PATH="/opt/venv/bin:$PATH"
 RUN mkdir -p /localjup/notebooks
 WORKDIR /localjup/notebooks
 ENV PYTHONPATH=/localjup/notebooks:/localjup/notebooks/app
-
+RUN apt update
+RUN apt install tree
 EXPOSE 8080
 
 CMD ["jupyter", "lab", "--allow-root", "--ip=0.0.0.0", "--port=8080", "--no-browser"]
