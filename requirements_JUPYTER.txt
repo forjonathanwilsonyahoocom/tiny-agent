@@ -5,3 +5,5 @@ jupyter==1.1.1
 langchain
 langchain-ollama
 langchain-core
+ddgs>=6.0.0
+
